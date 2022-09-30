@@ -18,7 +18,7 @@ const showContent = () => {
         chrome.storage.sync.get("color", ({ color }) => {
             showScroller = "overflow: visible;"
             hideBlocker = "display: none;"
-            opacity = "opacity: 0;"
+            opacity = "opacity: 0; display: none;"
             document.querySelector("body").style = showScroller;
             document.querySelector("#rprw").style = hideBlocker;
             document.querySelector("body > div.modal-backdrop.fade.show").style = opacity;
